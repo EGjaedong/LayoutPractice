@@ -14,23 +14,24 @@
         android:layout_marginEnd="@dimen/sign_img_margin_left_and_right"
         android:alpha="125"
         android:contentDescription="@string/sign_text"
-        android:src="@mipmap/fill_1"
+        android:src="@mipmap/sign"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintVertical_bias="0.138"/>
+        app:layout_constraintVertical_bias="0.138" />
 
     <EditText
         android:id="@+id/username"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/edit_text_margin_left_and_right"
-        android:layout_marginTop="@dimen/edit_text_margin_top_to_image_bottom"
         android:layout_marginEnd="@dimen/edit_text_margin_left_and_right"
+        android:autofillHints="username"
         android:background="@drawable/edit_shape"
         android:gravity="start"
         android:hint="@string/user_name"
+        android:inputType="text"
         android:lineSpacingExtra="@dimen/edit_text_line_spacing"
         android:paddingStart="@dimen/edit_text_padding_left_and_right"
         android:paddingTop="@dimen/edit_text_padding_top_and_bottom"
@@ -38,20 +39,19 @@
         android:paddingBottom="@dimen/edit_text_padding_top_and_bottom"
         android:textColor="@color/fontColor"
         android:textSize="@dimen/edit_text_size"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintVertical_bias="0.24"
-        android:autofillHints="username"/>
+        app:layout_constraintVertical_bias="0.24" />
 
     <EditText
         android:id="@+id/password"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/edit_text_margin_left_and_right"
-        android:layout_marginTop="@dimen/edit_text_margin_top_to_image_bottom"
         android:layout_marginEnd="@dimen/edit_text_margin_left_and_right"
+        android:autofillHints="password"
         android:background="@drawable/edit_shape"
         android:gravity="start"
         android:hint="@string/password"
@@ -62,23 +62,34 @@
         android:paddingBottom="@dimen/edit_text_padding_top_and_bottom"
         android:textColor="@color/fontColor"
         android:textSize="@dimen/edit_text_size"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintVertical_bias="0.35"
-        android:autofillHints="password"/>
+        app:layout_constraintVertical_bias="0.35" />
 
-    <CheckBox
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="@dimen/check_box_margin_left_to_parent"
-        android:layout_marginTop="@dimen/check_box_margin_top_to_password"
-        android:background="@drawable/check_style"
-        android:hint="@string/check_box"
+    <ImageView
+        android:id="@+id/check_box_img"
+        android:layout_width="@dimen/check_box_size"
+        android:layout_height="@dimen/check_box_size"
+        android:layout_marginStart="@dimen/check_box_margin_left_to_password"
+        android:background="@drawable/ic_btn_checkbox_normal"
+        android:contentDescription="@string/check_box"
         android:textColor="@color/check_box_font_color"
         android:textSize="@dimen/check_box_font_size"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/password" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="@id/password"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.42" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/remember_margin_start"
+        android:text="@string/remember_me"
+        android:textColor="@color/remember_color"
+        android:textSize="@dimen/remember_text_size"
+        app:layout_constraintLeft_toRightOf="@id/check_box_img"
+        app:layout_constraintTop_toTopOf="@+id/check_box_img" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
