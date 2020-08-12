@@ -12,4 +12,5 @@
     <color name="login_text_color">#FFFFFF</color>
     <color name="connect_us_color">#979797</color>
     <color name="btn_twitter_color">#55ACEE</color>
+    <color name="sign_up_text_color">#3B5998</color>
 </resources>

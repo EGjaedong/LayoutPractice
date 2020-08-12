@@ -38,4 +38,6 @@
     <dimen name="twitter_margin_end">48dp</dimen>
     <dimen name="twitter_margin_start">216dp</dimen>
 
+    <dimen name="sign_up_with_email_margin_start_and_end">48dp</dimen>
+    <dimen name="sign_up_text_size">16sp</dimen>
 </resources>

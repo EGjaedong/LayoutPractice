@@ -10,4 +10,5 @@
     <string name="login_text">Login</string>
     <string name="connect_us_text">or connect us</string>
     <string name="facebook">facebook</string>
+    <string name="sign_up_text">Sign Up with E-mail</string>
 </resources>
