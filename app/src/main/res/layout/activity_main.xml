@@ -83,6 +83,7 @@
         app:layout_constraintVertical_bias="0.42" />
 
     <TextView
+        android:id="@+id/remember_me_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/remember_margin_start"
@@ -91,5 +92,18 @@
         android:textSize="@dimen/remember_text_size"
         app:layout_constraintLeft_toRightOf="@id/check_box_img"
         app:layout_constraintTop_toTopOf="@+id/check_box_img" />
+
+    <TextView
+        android:id="@+id/forget_password_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/remember_margin_start"
+        android:text="@string/forget_password_text"
+        android:textColor="@color/remember_color"
+        android:textSize="@dimen/remember_text_size"
+        app:layout_constraintRight_toRightOf="@id/password"
+        app:layout_constraintTop_toTopOf="@+id/check_box_img" />
+
+    
 
 </androidx.constraintlayout.widget.ConstraintLayout>
