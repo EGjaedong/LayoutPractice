@@ -7,11 +7,12 @@
     <dimen name="input_height">44dp</dimen>
     <dimen name="edit_text_radius">4dp</dimen>
     <dimen name="edit_text_border">1dp</dimen>
-    <dimen name="edit_text_size">14dp</dimen>
+    <dimen name="edit_text_size">14sp</dimen>
 
     <dimen name="edit_text_padding_top_and_bottom">12dp</dimen>
-    <dimen name="edit_text_padding_left">24dp</dimen>
+    <dimen name="edit_text_padding_left_and_right">24dp</dimen>
     <dimen name="edit_text_margin_top_to_image_bottom">68dp</dimen>
+    <dimen name="edit_text_margin_left_and_right">48dp</dimen>
     <dimen name="edit_text_password_top_to_username_bottom">24dp</dimen>
     <dimen name="edit_text_line_spacing">20dp</dimen>
 
