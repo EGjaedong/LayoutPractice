@@ -16,12 +16,26 @@
 
     <dimen name="check_box_size">16dp</dimen>
     <dimen name="check_box_font_size">12sp</dimen>
-    <dimen name="check_box_margin_left_to_password">-10dp</dimen>
+    <dimen name="check_box_margin_left_to_password">0dp</dimen>
+
     <dimen name="remember_margin_start">8dp</dimen>
     <dimen name="remember_text_size">12sp</dimen>
-    <dimen name="login_margin_start_and_end">0dp</dimen>
-    <dimen name="login_radius">24dp</dimen>
-    <dimen name="login_border">1dp</dimen>
+
+    <dimen name="login_margin_start_and_end">48dp</dimen>
+    <dimen name="btn_radius">24dp</dimen>
+    <dimen name="btn_border">1dp</dimen>
     <dimen name="login_text_size">16sp</dimen>
+
     <dimen name="connect_us_text_size">12sp</dimen>
+
+    <dimen name="facebook_height">44dp</dimen>
+    <dimen name="facebook_margin_start">48dp</dimen>
+    <dimen name="facebook_margin_end">216dp</dimen>
+
+    <dimen name="twitter_height">44dp</dimen>
+    <dimen name="btn_twitter_radius">24dp</dimen>
+    <dimen name="btn_twitter_border">1dp</dimen>
+    <dimen name="twitter_margin_end">48dp</dimen>
+    <dimen name="twitter_margin_start">216dp</dimen>
+
 </resources>

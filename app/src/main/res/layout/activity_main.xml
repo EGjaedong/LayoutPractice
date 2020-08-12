@@ -68,7 +68,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.35" />
 
-    <ImageView
+    <ImageButton
         android:id="@+id/check_box_img"
         android:layout_width="@dimen/check_box_size"
         android:layout_height="@dimen/check_box_size"
@@ -108,9 +108,9 @@
         android:id="@+id/login_btn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="@dimen/edit_text_margin_left_and_right"
-        android:layout_marginEnd="@dimen/edit_text_margin_left_and_right"
-        android:background="@drawable/btn_style"
+        android:layout_marginStart="@dimen/login_margin_start_and_end"
+        android:layout_marginEnd="@dimen/login_margin_start_and_end"
+        android:background="@drawable/btn_shape"
         android:text="@string/login_text"
         android:textAllCaps="false"
         android:textColor="@color/login_text_color"
@@ -132,7 +132,36 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.638"
-        />
+        app:layout_constraintVertical_bias="0.638" />
+
+    <ImageButton
+        android:id="@+id/facebook_btn"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/facebook_height"
+        android:layout_marginStart="@dimen/facebook_margin_start"
+        android:layout_marginEnd="@dimen/facebook_margin_end"
+        android:background="@drawable/btn_shape"
+        android:src="@drawable/ic_facebook"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.711"
+        android:contentDescription="@string/facebook" />
+
+    <ImageButton
+        android:id="@+id/twitter_btn"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/twitter_height"
+        android:layout_marginStart="@dimen/twitter_margin_start"
+        android:layout_marginEnd="@dimen/twitter_margin_end"
+        android:background="@drawable/btn_twitter_shape"
+        android:src="@drawable/ic_twitter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.711"
+        android:contentDescription="@string/facebook" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
