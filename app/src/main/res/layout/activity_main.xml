@@ -8,52 +8,64 @@
 
     <ImageView
         android:id="@+id/sign_img"
-        android:layout_width="@dimen/sign_width"
-        android:layout_height="@dimen/sign_height"
-        app:layout_constraintTop_toTopOf="parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/sign_img_margin_left_and_right"
         android:layout_marginTop="@dimen/image_margin_top"
+        android:layout_marginEnd="@dimen/sign_img_margin_left_and_right"
+        android:alpha="125"
+        android:contentDescription="@string/sign_text"
+        android:src="@mipmap/fill_1"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        android:src="@mipmap/fill_1"
-        android:alpha="125"
-        />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/username"
         android:layout_width="@dimen/input_width"
         android:layout_height="@dimen/input_height"
+        android:layout_marginTop="@dimen/edit_text_margin_top_to_image_bottom"
         android:background="@drawable/edit_shape"
         android:gravity="start"
         android:hint="@string/user_name"
-        android:textColor="@color/fontColor"
         android:lineSpacingExtra="@dimen/edit_text_line_spacing"
         android:paddingStart="@dimen/edit_text_padding_left"
         android:paddingTop="@dimen/edit_text_padding_top_and_bottom"
         android:paddingBottom="@dimen/edit_text_padding_top_and_bottom"
+        android:textColor="@color/fontColor"
         android:textSize="@dimen/edit_text_size"
-        app:layout_constraintTop_toBottomOf="@id/sign_img"
-        android:layout_marginTop="@dimen/edit_text_margin_top_to_image_bottom"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"/>
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/sign_img" />
 
     <EditText
         android:id="@+id/password"
         android:layout_width="@dimen/input_width"
         android:layout_height="@dimen/input_height"
+        android:layout_marginTop="@dimen/edit_text_password_top_to_username_bottom"
         android:background="@drawable/edit_shape"
         android:gravity="start"
         android:hint="@string/password"
-        android:textColor="@color/fontColor"
+        android:inputType="textPassword"
         android:paddingStart="@dimen/edit_text_padding_left"
         android:paddingTop="@dimen/edit_text_padding_top_and_bottom"
         android:paddingBottom="@dimen/edit_text_padding_top_and_bottom"
+        android:textColor="@color/fontColor"
         android:textSize="@dimen/edit_text_size"
-        app:layout_constraintTop_toBottomOf="@id/username"
-        android:layout_marginTop="@dimen/edit_text_password_top_to_username_bottom"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        android:inputType="textPassword" />
+        app:layout_constraintTop_toBottomOf="@id/username" />
 
-    
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/check_box_margin_left_to_parent"
+        android:layout_marginTop="@dimen/check_box_margin_top_to_password"
+        android:background="@drawable/check_style"
+        android:hint="@string/check_box"
+        android:textColor="@color/check_box_font_color"
+        android:textSize="@dimen/check_box_font_size"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/password" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

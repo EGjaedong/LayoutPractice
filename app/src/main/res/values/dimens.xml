@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <dimen name="sign_width">171dp</dimen>
-    <dimen name="sign_height">35dp</dimen>
     <dimen name="image_margin_top">112dp</dimen>
+    <dimen name="sign_img_margin_left_and_right">24dp</dimen>
 
     <dimen name="input_width">279dp</dimen>
     <dimen name="input_height">44dp</dimen>
@@ -19,4 +18,7 @@
     <dimen name="check_box_size">16dp</dimen>
     <dimen name="check_box_radius">2dp</dimen>
     <dimen name="check_box_border">1dp</dimen>
+    <dimen name="check_box_margin_left_to_parent">59dp</dimen>
+    <dimen name="check_box_margin_top_to_password">16dp</dimen>
+    <dimen name="check_box_font_size">12dp</dimen>
 </resources>
