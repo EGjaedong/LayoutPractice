@@ -6,17 +6,16 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
-        android:id="@+id/sign_text"
+    <ImageView
+        android:id="@+id/sign_img"
         android:layout_width="@dimen/sign_width"
         android:layout_height="@dimen/sign_height"
-        android:text="@string/sign_text"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintVertical_bias="0.1595"
+        android:layout_marginTop="@dimen/image_margin_top"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        android:gravity="fill"
+        android:src="@mipmap/fill_1"
+        android:alpha="125"
         />
 
     <EditText
@@ -26,13 +25,14 @@
         android:background="@drawable/edit_shape"
         android:gravity="start"
         android:hint="@string/user_name"
+        android:textColor="@color/fontColor"
+        android:lineSpacingExtra="@dimen/edit_text_line_spacing"
         android:paddingStart="@dimen/edit_text_padding_left"
         android:paddingTop="@dimen/edit_text_padding_top_and_bottom"
         android:paddingBottom="@dimen/edit_text_padding_top_and_bottom"
         android:textSize="@dimen/edit_text_size"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintVertical_bias="0.292"
+        app:layout_constraintTop_toBottomOf="@id/sign_img"
+        android:layout_marginTop="@dimen/edit_text_margin_top_to_image_bottom"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"/>
 
@@ -43,15 +43,17 @@
         android:background="@drawable/edit_shape"
         android:gravity="start"
         android:hint="@string/password"
+        android:textColor="@color/fontColor"
         android:paddingStart="@dimen/edit_text_padding_left"
         android:paddingTop="@dimen/edit_text_padding_top_and_bottom"
         android:paddingBottom="@dimen/edit_text_padding_top_and_bottom"
         android:textSize="@dimen/edit_text_size"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintVertical_bias="0.372"
+        app:layout_constraintTop_toBottomOf="@id/username"
+        android:layout_marginTop="@dimen/edit_text_password_top_to_username_bottom"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"/>
+        app:layout_constraintRight_toRightOf="parent"
+        android:inputType="textPassword" />
 
+    
 
 </androidx.constraintlayout.widget.ConstraintLayout>
