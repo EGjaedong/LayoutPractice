@@ -91,7 +91,7 @@
         android:textColor="@color/remember_color"
         android:textSize="@dimen/remember_text_size"
         app:layout_constraintLeft_toRightOf="@id/check_box_img"
-        app:layout_constraintTop_toTopOf="@+id/check_box_img" />
+        app:layout_constraintTop_toTopOf="@id/check_box_img" />
 
     <TextView
         android:id="@+id/forget_password_text"
@@ -102,7 +102,24 @@
         android:textColor="@color/remember_color"
         android:textSize="@dimen/remember_text_size"
         app:layout_constraintRight_toRightOf="@id/password"
-        app:layout_constraintTop_toTopOf="@+id/check_box_img" />
+        app:layout_constraintTop_toTopOf="@id/check_box_img" />
+
+    <Button
+        android:id="@+id/login_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/edit_text_margin_left_and_right"
+        android:layout_marginEnd="@dimen/edit_text_margin_left_and_right"
+        android:background="@drawable/btn_style"
+        android:text="@string/login_text"
+        android:textAllCaps="false"
+        android:textColor="@color/login_text_color"
+        android:textSize="@dimen/login_text_size"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.53" />
 
     
 

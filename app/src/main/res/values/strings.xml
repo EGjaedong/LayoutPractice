@@ -8,4 +8,5 @@
     <string name="remember_me">Remember me</string>
     <string name="forget_password_text">Forget password?</string>
     <string name="login_text">Login</string>
+    <string name="connect_us_text">or connect us</string>
 </resources>

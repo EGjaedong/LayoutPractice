@@ -19,4 +19,8 @@
     <dimen name="check_box_margin_left_to_password">-10dp</dimen>
     <dimen name="remember_margin_start">8dp</dimen>
     <dimen name="remember_text_size">12sp</dimen>
+    <dimen name="login_margin_start_and_end">0dp</dimen>
+    <dimen name="login_radius">24dp</dimen>
+    <dimen name="login_border">1dp</dimen>
+    <dimen name="login_text_size">16sp</dimen>
 </resources>
