@@ -121,6 +121,18 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.53" />
 
-    
+    <TextView
+        android:id="@+id/connect_us_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/connect_us_text"
+        android:textColor="@color/connect_us_color"
+        android:textSize="@dimen/connect_us_text_size"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.638"
+        />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

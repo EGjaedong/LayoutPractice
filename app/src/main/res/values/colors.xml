@@ -11,4 +11,5 @@
     <color name="login_back_color">#3B5998</color>
     <color name="login_border_color">#3B5998</color>
     <color name="login_text_color">#FFFFFF</color>
+    <color name="connect_us_color">#979797</color>
 </resources>
