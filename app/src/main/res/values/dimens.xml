@@ -1,4 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-
+    <dimen name="sign_width">164dp</dimen>
+    <dimen name="sign_height">26dp</dimen>
+    <dimen name="input_height">32dp</dimen>
+    <dimen name="input_width">268dp</dimen>
+    <dimen name="edit_text_radius">5dp</dimen>
+    <dimen name="edit_text_bord">1dp</dimen>
+    <dimen name="edit_text_padding_left">23dp</dimen>
+    <dimen name="edit_text_padding_top_and_bottom">9dp</dimen>
+    <dimen name="edit_text_size">8sp</dimen>
 </resources>

@@ -7,13 +7,51 @@
     tools:context=".MainActivity">
 
     <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:id="@+id/sign_text"
+        android:layout_width="@dimen/sign_width"
+        android:layout_height="@dimen/sign_height"
         android:text="@string/sign_text"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.138"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintVertical_bias="0.1595"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintHorizontal_bias="0.269"
+        app:layout_constraintRight_toRightOf="parent"
+        android:gravity="fill"
         />
+
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="@dimen/input_width"
+        android:layout_height="@dimen/input_height"
+        android:background="@drawable/edit_shape"
+        android:gravity="start"
+        android:hint="@string/user_name"
+        android:paddingStart="@dimen/edit_text_padding_left"
+        android:paddingTop="@dimen/edit_text_padding_top_and_bottom"
+        android:paddingBottom="@dimen/edit_text_padding_top_and_bottom"
+        android:textSize="@dimen/edit_text_size"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintVertical_bias="0.292"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="@dimen/input_width"
+        android:layout_height="@dimen/input_height"
+        android:background="@drawable/edit_shape"
+        android:gravity="start"
+        android:hint="@string/password"
+        android:paddingStart="@dimen/edit_text_padding_left"
+        android:paddingTop="@dimen/edit_text_padding_top_and_bottom"
+        android:paddingBottom="@dimen/edit_text_padding_top_and_bottom"
+        android:textSize="@dimen/edit_text_size"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintVertical_bias="0.372"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
