@@ -12,7 +12,6 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/sign_img_margin_left_and_right"
         android:layout_marginEnd="@dimen/sign_img_margin_left_and_right"
-        android:alpha="125"
         android:contentDescription="@string/sign_text"
         android:src="@mipmap/sign"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -68,7 +67,19 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.35" />
 
-    <ImageButton
+    <CheckBox
+        android:id="@+id/check_box"
+        android:layout_width="@dimen/check_box_size"
+        android:layout_height="@dimen/check_box_size"
+        android:layout_marginStart="@dimen/check_box_margin_left_to_password"
+        android:button="@drawable/btn_checkbox_style"
+        android:contentDescription="@string/check_box"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="@id/password"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.42" />
+
+    <!--<ImageButton
         android:id="@+id/check_box_img"
         android:layout_width="@dimen/check_box_size"
         android:layout_height="@dimen/check_box_size"
@@ -80,7 +91,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="@id/password"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.42" />
+        app:layout_constraintVertical_bias="0.42" />-->
 
     <TextView
         android:id="@+id/remember_me_text"
@@ -90,8 +101,8 @@
         android:text="@string/remember_me"
         android:textColor="@color/remember_color"
         android:textSize="@dimen/remember_text_size"
-        app:layout_constraintLeft_toRightOf="@id/check_box_img"
-        app:layout_constraintTop_toTopOf="@id/check_box_img" />
+        app:layout_constraintLeft_toRightOf="@id/check_box"
+        app:layout_constraintTop_toTopOf="@id/check_box" />
 
     <TextView
         android:id="@+id/forget_password_text"
@@ -102,7 +113,7 @@
         android:textColor="@color/remember_color"
         android:textSize="@dimen/remember_text_size"
         app:layout_constraintRight_toRightOf="@id/password"
-        app:layout_constraintTop_toTopOf="@id/check_box_img" />
+        app:layout_constraintTop_toTopOf="@id/check_box" />
 
     <Button
         android:id="@+id/login_btn"
@@ -134,35 +145,42 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.638" />
 
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/center_guide_line"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5" />
+
     <ImageButton
         android:id="@+id/facebook_btn"
-        android:layout_width="match_parent"
+        android:layout_width="@dimen/facebook_width"
         android:layout_height="@dimen/facebook_height"
         android:layout_marginStart="@dimen/facebook_margin_start"
         android:layout_marginEnd="@dimen/facebook_margin_end"
         android:background="@drawable/btn_shape"
+        android:contentDescription="@string/facebook"
         android:src="@drawable/ic_facebook"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/center_guide_line"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.78"
-        android:contentDescription="@string/facebook" />
+        app:layout_constraintVertical_bias="0.78" />
 
     <ImageButton
         android:id="@+id/twitter_btn"
-        android:layout_width="match_parent"
+        android:layout_width="@dimen/twitter_width"
         android:layout_height="@dimen/twitter_height"
         android:layout_marginStart="@dimen/twitter_margin_start"
         android:layout_marginEnd="@dimen/twitter_margin_end"
         android:background="@drawable/btn_twitter_shape"
+        android:contentDescription="@string/facebook"
         android:src="@drawable/ic_twitter"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/center_guide_line"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.78"
-        android:contentDescription="@string/facebook" />
+        app:layout_constraintVertical_bias="0.78" />
 
     <Button
         android:id="@+id/sign_up_with_email"

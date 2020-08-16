@@ -1,7 +1,6 @@
-package com.thoughtworks.layoutpractice;
+package com.hezhiheng.layoutpractice;
 
 import android.os.Bundle;
-import android.view.WindowManager;
 
 import androidx.appcompat.app.AppCompatActivity;
 

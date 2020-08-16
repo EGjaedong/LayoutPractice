@@ -30,13 +30,15 @@
 
     <dimen name="facebook_height">44dp</dimen>
     <dimen name="facebook_margin_start">48dp</dimen>
-    <dimen name="facebook_margin_end">216dp</dimen>
+    <dimen name="facebook_margin_end">24dp</dimen>
+    <dimen name="facebook_width">0dp</dimen>
 
     <dimen name="twitter_height">44dp</dimen>
     <dimen name="btn_twitter_radius">24dp</dimen>
     <dimen name="btn_twitter_border">1dp</dimen>
     <dimen name="twitter_margin_end">48dp</dimen>
-    <dimen name="twitter_margin_start">216dp</dimen>
+    <dimen name="twitter_margin_start">24dp</dimen>
+    <dimen name="twitter_width">0dp</dimen>
 
     <dimen name="sign_up_with_email_margin_start_and_end">48dp</dimen>
     <dimen name="sign_up_text_size">16sp</dimen>
